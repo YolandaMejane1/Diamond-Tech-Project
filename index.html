@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Tech</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+    body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link, .navbar-text {
+            color: #000000 !important;
+        }
+        .nav-link:hover {
+            color: #ffa500 !important;
+        }
+        .hero {
+            background-image: url('https://t3.ftcdn.net/jpg/07/54/72/44/240_F_754724491_lJvY8N3dObCeiSTlOrskY5MhlIUnqa5K.jpg');
+            background-size: 30%;
+            background-position: center;
+            width: 100vw;
+            position: relative;
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            color: #070707;
+            font-size: 46px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            color: #080808;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        #about {
+            padding-top: 60px 40px;
+        }
+
+        #about .container {
+        box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3) !important;
+        padding: 40px;
+        background-color: rgb(249, 245, 245);
+        border-radius: 8px;
+        }
+
+        #about .section-title {
+        margin-bottom: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+             }
+
+        .card-body {
+             flex: 1;
+             }
+
+        .card-header {
+             flex-shrink: 0;
+             }
+
+        .card-body img {
+             max-width: 100%;
+             height: auto;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             }
+
+       .card.shadow { 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+        .card-header {
+            background-color: #ff9100;
+            color: #ffffff;
+        }
+        .btn-orange {
+            background-color: #ff9100;
+            color: #ffffff;
+        }
+        .btn-orange:hover {
+            background-color: #e69500;
+            color: #ffffff;
+        }
+
+        #contact {
+        background: url('https://t4.ftcdn.net/jpg/03/32/62/17/240_F_332621786_QVVP09JPuKp3gW2HINxOrLbP4RZ08MFO.jpg') no-repeat center center;
+        background-size: cover;
+        color: rgb(5, 5, 5);
+        padding: 60px 0;
+        text-align: center;
+        }
+
+        #contact .container {
+        position: relative;
+        z-index: 2;
+        }
+
+        #contact a {
+        color: #02266f;
+        }
+
+        .btn.btn-orange {
+        background-color: #ff9100;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        }
+
+
+        footer {
+            background-color: #fffefd;
+            color: #070707;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://t4.ftcdn.net/jpg/08/30/47/39/240_F_830473998_cfgTanhkVkezODNWaxVpiyNErGLV2BFA.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Diamond Tech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to <br> Diamond Tech</h1>
+            <p>Leading ICT company in Zimbabwe & South Africa. Focusing on hardware, software, consumables, and electricals.</p>
+            <a href="#contact" class="btn btn-orange">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Since 2018, Diamond Tech has partnered with global ICT brands to deliver top-quality products and services. We are a youth-owned company funded by Fortune Makoni, committed to innovation and excellence in the ICT industry.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.pexels.com/photos/9242850/pexels-photo-9242850.jpeg?auto=compress&cs=tinysrgb&w=800" alt="About Us Image" class="img-fluid shadow" style="max-width: 450px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section id="products" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="row">
+                <!-- PC and Laptops -->
+                <div class="col-md-4">
+                    <div class="card shadow d-flex flex-column">
+                        <div class="card-header"><i class="fa fa-desktop"></i>  PCs and Laptops</div>
+                        <div class="card-body text-center">
+                            <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=800" alt="PCs and Laptops" class="img-fluid mb-3">
+                            <p>Supplying top brands like Apple, HP, Lenovo. We also offer spare parts like screens and accessories.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Printers and Cartridges -->
+                <div class="col-md-4">
+                    <div class="card shadow d-flex flex-column">
+                        <div class="card-header"><i class="fa fa-print"></i>  Printers & Cartridges</div>
+                        <div class="card-body text-center">
+                            <img src="https://images.pexels.com/photos/7014408/pexels-photo-7014408.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Printers and Cartridges" class="img-fluid mb-3">
+                            <p>Offering a range of commercial and domestic printers, including Canon, HP, and Fujitsu. 180-day money-back guarantee on cartridges.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cellphones and Tablets -->
+                <div class="col-md-4">
+                    <div class="card shadow d-flex flex-column">
+                        <div class="card-header"><i class="fa fa-mobile-alt"></i>  Cellphones & Tablets</div>
+                        <div class="card-body text-center">
+                            <img src="https://images.pexels.com/photos/3945689/pexels-photo-3945689.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cellphones and Tablets" class="img-fluid mb-3">
+                            <p>Leading retailer of cellphones and tablets. Brands include Apple, Samsung, Huawei, available in new and second-hand options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Lets Get in  Touch!</h2>
+            <p>Reach out to us by filling in the contact form or send an email on <a href="#">info@diamondtech.com</a></p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-orange">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Coded by Yolanda Mejane</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
